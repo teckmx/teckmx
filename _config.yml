@@ -1,0 +1,20 @@
+title: "Teck: Desarrollo de Software"
+email: "hola@teck.com.mx"
+phone: 6561999357
+description:
+baseurl: # the subpath of your site, e.g. /blog
+url:   http://teck.com.mx # the base hostname & protocol for your site, e.g. http://example.com
+facebook_page: "https://www.facebook.com/Teck-412362945788245/"
+twitter_page: "https://twitter.com/TeckConsulting"
+
+# Build settings
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+port: 4001

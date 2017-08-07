@@ -1,0 +1,49 @@
+<div class="contact style-3 light-gray-bg padding-top-40 padding-bottom-80">
+  <div class="container">
+    <div class="heading-block text-center margin-bottom-80">
+      <h3 style="color: #131313;">{{page.contact_title}}</h3>
+      <hr>
+      {% if page.contact_link_text  %}
+      <span class=" margin-top-20">{{page.contact_description}} <a href="{{page.contact_link}}">{{page.contact_link_text}}</a> </span> </div>
+      {% else %}
+      <span class=" margin-top-20">{{page.contact_description}} </span> </div>
+      {% endif %}
+
+    <!-- Form  -->
+    <div class="contact-right padding-top-30 padding-left-30">
+      <!-- Success Msg -->
+      <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Gracias. Tu mensaje ha sido enviado.</div>
+
+      <!-- FORM -->
+      <form role="form" id="contact_form" class="contact-form">
+        <ul class="row">
+          <li class="col-sm-4">
+            <label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre *" required>
+              <input type="hidden" name="tipo_de_contacto" value="{{page.contacto_tipo}}">
+              <input type="hidden" id="form-domain" name="domain" value="">
+            </label>
+          </li>
+          <li class="col-sm-4">
+            <label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Email  *" required>
+            </label>
+          </li>
+          <li class="col-sm-4">
+            <label>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono *" required>
+            </label>
+          </li>
+          <li class="col-sm-12">
+            <label>
+              <textarea class="form-control" name="message" id="message" rows="5" placeholder="{{page.contacto_text_placeholder}}" ></textarea>
+            </label>
+          </li>
+          <li class="col-sm-12">
+            <button id="submit" type="button" class="btn" value="submit" >Enviar mensaje</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>

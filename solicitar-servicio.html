@@ -1,0 +1,56 @@
+---
+title: "Diseño web, aplicaciones web y móviles"
+layout: main
+description: "Somo una agencia de Ciudad Juárez. Te ayudamos a desarrollar soluciones Web y Móviles a un precio competitivo."
+---
+
+<div class="contact style-3 light-gray-bg padding-top-40 padding-bottom-80">
+  <div class="container">
+    <div class="heading-block text-center margin-bottom-80">
+      <h3 style="color: #131313;">Elige el servicio web que deseas</h3>
+      <hr>
+      <span class=" margin-top-20">Al recibir tu solicitud nos pondremos en contacto para iniciar con el proceso. Vamos a necesitar información como el dominio que deseas, giro de tu negocio, entre otras cosas. A partir de recibir toda la información que necesitamos tu página podrá estar lista en 7 días a más tardar. Está pendiente!</span> </div>
+
+
+    <!-- Form  -->
+    <div class="contact-right padding-top-30 padding-left-30">
+      <!-- Success Msg -->
+      <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Gracias. Tu mensaje ha sido enviado.</div>
+
+      <!-- FORM -->
+      <form role="form" id="contact_form" class="contact-form" action="https://formspree.io/hola@teck.com.mx" method="POST">
+        <ul class="row">
+          <li class="col-sm-4">
+            <label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre *">
+            </label>
+          </li>
+          <li class="col-sm-4">
+            <label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Email  *">
+            </label>
+          </li>
+          <li class="col-sm-4">
+            <label>
+              <input type="text" class="form-control" name="company" id="company" placeholder="Empresa">
+            </label>
+          </li>
+          <li class="col-sm-4">
+            <label style="color:rgba(0,0,0,.3);">
+              Selecciona el paquete web de tu interés
+              <select class="form-control" name="paquete_web">
+                <option value=""></option>
+                <option value="Startup">Startup</option>
+                <option value="Business">Business</option>
+                <option value="Ecommerce">Ecommerce</option>
+              </select>
+            </label>
+          </li>
+          <li class="col-sm-12">
+            <button type="submit" class="btn" value="submit" >Enviar mensaje</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
